@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        
+        <h5>CREATE QUOTATION</h5>
+        <p class="text">Please Fill all fields attach/upload all supporting documents to proceed with the registration</p>
+        <div class="step input_format">
+            <div class="check">
+                <div class="circle">1</div>
+                <h6 style="margin-bottom: 0px;">Quotation Information</h6>
+            </div>
+            <div class="input_inside">
+                <div class="input-column">
+                    <label for="username">CUSTOMER NAME<span class="required">*</span></label><br>
+                    <input type="text" id="username" name="username" placeholder="Customer Name" size="40" required>
+                </div>
+                <div class="input-column">
+                    <label for="email">Email<span class="required">*</span></label><br>
+                    <input type="email" id="email" name="email" placeholder="usename@example.com" size="40"
+                        required>
+                </div>
+                <div class="input-column">
+                    <label for="phone">MOBILE NO.<span class="required">*</span></label><br>
+                    <input type="text" id="phone" name="phone" placeholder="Mobile Number" size="40" required>
+                </div>
+                <div class="input-column">
+                    <label for="country">Country<span class="required">*</span></label><br>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected style="font-size: 10px;">Select Country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="input-column">
+                    <label for="city">City <span class="required">*</span></label><br>
+                    <input type="text" id="city" name="city" placeholder="City" size="40" required>
+                </div>
+                <div class="input-column">
+                    <label for="address">Address<span class="required">*</span></label><br>
+                    <input type="text" id="address" name="address" placeholder="Address" size="40" required>
+                </div>
+                <div class="input-column">
+                    <label for="payment">Payment Items <span class="required">*</span></label><br>
+                    <select id="payment" name="payment" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="table_container">
+                <div class="check" style="margin-top: 20px; ">
+                    <div class="circle">2</div>
+                    <h6 style="margin-bottom: 0px;">Services</h6>
+                </div>
+                <h6 style="margin-top: 20px">Services</h6>
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="table-head text-center">Sl No.</th>
+                            <th scope="col" class="table-head text-center">Services</th>
+                            <th scope="col" class="table-head text-center">Price</th>
+                            <th scope="col" class="table-head text-center">Select services</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-center fw-normal">1</th>
+                            <td class="text-center">Arabian Horse</td>
+                            <td class="text-center">52.00</td>
+                            <td class="text-center"><input data-price="52" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center fw-normal">2</th>
+                            <td class="text-center">Farrier For Horse</td>
+                            <td class="text-center">5000.00</td>
+                            <td class="text-center"><input data-price="5000" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center fw-normal">3</th>
+                            <td class="text-center">Jumping training for horse</td>
+                            <td class="text-center">5000.00</td>
+                            <td class="text-center"><input data-price="5000" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center fw-normal">4</th>
+                            <td class="text-center">FarrierFarrierFarrier</td>
+                            <td class="text-center">499.00</td>
+                            <td class="text-center"><input data-price="499" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center fw-normal">5</th>
+                            <td class="text-center">Racing</td>
+                            <td class="text-center">5000.00</td>
+                            <td class="text-center"><input data-price="5000" type="checkbox"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+
+            <div class="side_input">
+                <div class="input-columna">
+                    <label for="price">Price</label><br>
+                    <input type="text" id="price" name="price" size="30" >
+                </div>
+                <div class="input-columna">
+                    <label for="dsprice">Discount</label><br>
+                    <input type="text" id="dsprice" name="dsprice" size="30" placeholder="Ex: 1000Rs">
+                </div>
+                <div class="input-columna">
+                    <label for="tax">Tax</label><br>
+                    <input type="text" id="tax" name="tax" size="30" placeholder="Ex: 10%">
+                </div>
+                <div class="input-columna">
+                    <label for="tprice">Total Price</label><br>
+                    <input type="text" id="tprice" name="tprice" size="30"  >
+                </div>
+            </div>
+            <div class="create-container">
+                <button class="create-button" id="createButton">CREATE</button>
+                <hr class="create-line">
+            </div>
+
+        </div>
+
+        <!-- container -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+        <script>
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const priceInput = document.getElementById('price');
+            const discountInput = document.getElementById('dsprice');
+            const taxInput = document.getElementById('tax');
+            const totalPriceInput = document.getElementById('tprice');
+            const createButton = document.getElementById('createButton');
+            let totalPrice = 0;
+            function updateTotalPrice() {
+                totalPrice = 0;
+                checkboxes.forEach((checkbox) => {
+                    if (checkbox.checked) {
+                    const price = parseFloat(checkbox.getAttribute('data-price'));
+                    totalPrice += price;
+                    }
+                });
+                priceInput.value = totalPrice;
+            }
+
+            createButton.addEventListener('click', function() {
+                var temp = parseFloat(totalPrice) - parseFloat(discountInput.value);
+                var finalPrice = temp + (temp * (parseFloat(taxInput.value) / 100));
+                console.log("finalPrice", finalPrice);
+                totalPriceInput.value = finalPrice.toFixed(2);
+
+            });
+
+
+            checkboxes.forEach((checkbox) => {
+                checkbox.addEventListener('change', updateTotalPrice);
+            });
+
+            updateTotalPrice();
+        </script>
+
+</body>
+
+</html>

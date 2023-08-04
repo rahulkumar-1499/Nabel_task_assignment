@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-size: 10px;
+    
+}
+.container{
+    margin: 250px 0px 0px 150px ;
+    
+}
+
+
+.container h2{
+    margin-bottom: 0px;
+}
+
+ .container p{
+
+    margin-top: 0px;
+}
+
+.text {
+    font-size: 12px;
+}
+
+.container .input_format h4{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.input_format .input_inside{
+    margin-left: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input_inside .input-column {
+        width: calc(33.33% - 10px); /* 33.33% width for each column with a bit of spacing */
+        margin-bottom: 5px; /* Spacing between rows */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#email::placeholder {
+    font-size: 10px; /* You can adjust this value to your preference */
+    padding-left: 15px;
+    
+}
+#city::placeholder {
+    font-size: 10px; /* You can adjust this value to your preference */
+    padding: 10px;
+}
+#username::placeholder {
+    font-size: 10px; /* You can adjust this value to your preference */
+    padding: 10px;
+}
+#phone::placeholder {
+    font-size: 10px; /* You can adjust this value to your preference */
+    padding: 10px;
+}
+#country::placeholder {
+    font-size: 10px; /* You can adjust this value to your preference */
+    padding: 10px;
+}
+#address::placeholder {
+    font-size: 10px; /* You can adjust this value to your preference */
+    padding: 10px;
+}
+#payment::placeholder {
+    font-size: 10px; /* You can adjust this value to your preference */
+    padding: 10px;
+}
+#country option {
+    /* font-size: 10px; Adjust this value as needed */
+    color: gray;     /* You can change the color as well */
+    padding: 10px;
+}
+/* 
+#tax::placeholder{
+    font-size: 10;
+} */
+
+.required {
+    color: red; /* Or any other color you prefer */
+    margin :2px
+}
+
+.input_inside input {
+    width: 400px;
+    height: 25px;
+}
+
+.input_inside select {
+    width: 400px;
+}
+
+.input-column label {
+    margin-bottom: 0;
+  }
+.input-column input {
+    height: 30px; /* Set the desired height here */
+  }
+
+  .input-column select {
+    height: 30px; /* Set the desired height for the select element */
+    border-radius: 10px;
+    border: 1 px solid #333;
+  }
+
+  /* Additional styles for the label */
+  .input_format label {
+    font-weight: bold;
+    /* font-size: small; */
+    font-size: 10px;
+  }
+
+  /* Additional styles for the input field */
+  .input_format input {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .table_container h4{
+    margin: 7px 0 3px 0px;
+  }
+
+  
+ 
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #333;
+    border-spacing: 10px; /* Add space around cells */
+
+}
+
+.table th, .table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-head {
+    background-color: #BFBB9E !important;
+}
+
+
+.side_input{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.input-columna label{
+    margin-top: 10px;   
+}
+
+.input-columna input {
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.create-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.create-button {
+    background-color: #7C5E1E;
+    border: none;
+    padding: 4px 16px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.check {
+    display: flex;
+    /* align-items: center; */
+}
+
+.circle {
+    background-color: #333;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.line {
+    top: 90px; /* Adjust the positioning as needed */
+    left: 122px; /* Adjust the positioning as needed */
+    height: 27%; /* Adjust the height as needed */
+    position: absolute;
+    border-left: 2px solid #333;
+}
+
